@@ -1014,4 +1014,9 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithBundleURL:(__unused NSURL *)bundleUR
   return _wasBatchActive;
 }
 
+- (RCTBridge *)baseBridge
+{
+  return _parentBridge;
+}
+
 @end
